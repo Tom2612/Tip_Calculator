@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>SPLI<br>TTER</h1>
+  </header>
+  <main>
+
+    <div class="input title" id="top">
+      <label for="amount" class="label">Bill</label>
+      <input type="text" name="amount" id="inputamount" placeholder="0">
+    </div>
+
+    <div class="tipSelection">
+      <div class="label title">Select Tip %</div>
+      <div class="buttons">
+        <button class="btn">5%</button>
+        <button class="btn">10%</button>
+        <button class="btn">15%</button>
+        <button class="btn">25%</button>
+        <button class="btn">50%</button>
+        <button class="btn" id="custom">Custom</button>
+        <!-- Change this to an input type^ -->
+      </div>
+    </div>
+
+    <div class="input">
+      <label class="label title" for="people">Number of People</label>
+      <input type="number" name="people" id="people" placeholder="0">
+    </div>
+
+    <div class="results">
+      <div class="unit">
+        <p class="final">Tip Amount</p>
+        <span class="subtext">/ person</span>
+      </div>
+      <div class="unit value">$0.00</div>
+      <div class="unit">
+        <p class="final">Total</p>
+        <span class="subtext">/ person</span>
+      </div>
+      <div class="unit value">$0.00</div>
+      <button id="reset">RESET</button>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Tom2612">Tom2612</a>.
+  </div>
+</body>
+
+</html>
