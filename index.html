@@ -29,48 +29,50 @@
     <h1>SPLI<br>TTER</h1>
   </header>
   <main>
+    <div class="left">
+      <div class="input title" id="top">
+        <label for="amount" class="label">Bill</label>
+        <input type="text" name="amount" class="normalinput" id="inputamount" placeholder="0">
+      </div>
 
-    <div class="input title" id="top">
-      <label for="amount" class="label">Bill</label>
-      <input type="text" name="amount" id="inputamount" placeholder="0">
-    </div>
+      <div class="tipSelection">
+        <div class="label title">Select Tip %</div>
+        <div class="buttons">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn">50%</button>
+          <input type="text" class="btn" id="custom" placeholder="Custom"></button>
+        </div>
+      </div>
 
-    <div class="tipSelection">
-      <div class="label title">Select Tip %</div>
-      <div class="buttons">
-        <button class="btn">5%</button>
-        <button class="btn">10%</button>
-        <button class="btn">15%</button>
-        <button class="btn">25%</button>
-        <button class="btn">50%</button>
-        <button class="btn" id="custom">Custom</button>
-        <!-- Change this to an input type^ -->
+      <div class="input">
+        <label class="label title" for="people">Number of People</label>
+        <input type="text" class="normalinput" name="people" id="people" placeholder="0">
       </div>
     </div>
-
-    <div class="input">
-      <label class="label title" for="people">Number of People</label>
-      <input type="number" name="people" id="people" placeholder="0">
-    </div>
-
-    <div class="results">
-      <div class="unit">
-        <p class="final">Tip Amount</p>
-        <span class="subtext">/ person</span>
+    <div class="right">
+      <div class="results">
+        <div class="unit">
+          <p class="final">Tip Amount</p>
+          <span class="subtext">/ person</span>
+        </div>
+        <div class="unit value">$0.00</div>
+        <div class="unit">
+          <p class="final">Total</p>
+          <span class="subtext">/ person</span>
+        </div>
+        <div class="unit value">$0.00</div>
+        <button id="reset">RESET</button>
       </div>
-      <div class="unit value">$0.00</div>
-      <div class="unit">
-        <p class="final">Total</p>
-        <span class="subtext">/ person</span>
-      </div>
-      <div class="unit value">$0.00</div>
-      <button id="reset">RESET</button>
     </div>
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/Tom2612">Tom2612</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

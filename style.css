@@ -33,17 +33,19 @@ h1{
 .title{
     text-align: left;
 }
-input{
+.normalinput{
+    margin: 0 20px;
+    padding-right: 10px;
+    width: 90%;
     font-size: 24px;
     font-family: inherit;
     font-weight: 700;
     color: hsl(183, 100%, 15%);
     text-align: right;
-    margin: 0 20px;
-    width: 90%;
-    border: none;
+    border: 3px solid white;
     border-radius: 2px;
     background-color: hsl(189, 41%, 97%);
+    box-sizing: border-box;
 }
 .input {
     background-color: hsl(0, 0%, 100%);
@@ -76,10 +78,16 @@ input{
 .btn:hover, #reset:hover{
     background-color: hsl(185, 41%, 84%);
     color: hsl(183, 100%, 15%);
+    cursor: pointer;
 }
 #custom {
     background-color: hsl(189, 41%, 97%);
     color: hsl(186, 14%, 43%);
+    text-align: center;
+    width: 100%;
+}
+#custom{
+    cursor: text;
 }
 .results{
     background-color: hsl(183, 100%, 15%);
@@ -126,4 +134,69 @@ input{
 .activeBtn{
     color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%)
+}
+#inputamount:focus{
+    outline: none;
+    border: 3px solid hsl(172, 67%, 45%);
+}
+#inputamount:focus::placeholder{
+    color: transparent;
+}
+#people:focus{
+    outline: none;
+    border: 3px solid hsl(172, 67%, 45%);
+}
+#people:focus::placeholder{
+    color: transparent;
+}
+#custom:focus{
+    outline: none;
+    border: 3px solid hsl(172, 67%, 45%);
+    text-align: right;
+}
+#custom:focus::placeholder{
+    color: transparent;
+}
+
+/* Media stuff */
+/* size min: 375px - 768px, max: 769px onw. */
+@media (min-width: 769px){
+    main{
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-radius: 20px;
+    }
+    .left{
+        padding: 30px 10px 10px 30px;
+    }
+    .input{
+        margin-bottom: 15px;
+    }
+    .right{
+        height: 100%;
+    }
+    .results{
+        height: 85%;
+        padding: 50px 50px 30px 50px;
+        margin: 30px;
+        align-self: stretch;
+        grid-row-gap: 0;
+    }
+    .unit{
+        align-self: center;
+    }
+    .value{
+        font-size: 48px;
+    }
+    #reset{
+        height: 47.2px;
+        margin-top: 50px;
+    }
+}
+@media(min-width: 1024px) {
+    main{
+        width: 1024px;
+    }
 }
