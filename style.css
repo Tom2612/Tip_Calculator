@@ -85,6 +85,7 @@ h1{
     color: hsl(186, 14%, 43%);
     text-align: center;
     width: 100%;
+    padding-right: 10px;
 }
 #custom{
     cursor: text;
@@ -133,7 +134,7 @@ h1{
 /* Here are the JS classes */
 .activeBtn{
     color: hsl(183, 100%, 15%);
-    background-color: hsl(172, 67%, 45%)
+    background-color: hsl(185, 41%, 84%);
 }
 #inputamount:focus{
     outline: none;
