@@ -64,7 +64,7 @@ h1{
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
 }
-.btn{
+.btns{
     height: 2.9rem;
     font-family: 'Space Mono', sans-serif;
     font-weight: 700;
